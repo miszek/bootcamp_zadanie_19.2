@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Registration form</title>
 </head>
 <body>
-
+    <div>
+        <label for="passwd">Hasło:</label><br>
+        <input type="password" id="passwd" onkeyup="checkPasswd()"><br>
+    </div>
+    <div id="password-div">
+    </div>
+    <br>
+    <div>
+        <label for="passwd-check">Powtórz hasło:</label><br>
+        <input type="password" id="passwd-check" onkeyup="comparePasswd()">
+    </div>
+    <div id="password-check-div">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
